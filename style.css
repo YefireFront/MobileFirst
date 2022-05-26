@@ -1,11 +1,3 @@
-/*
-1. Poscionamiento
-2. Moedlo de cajas
-3. Tipografia
-4. Tema Visual
-5. Others
-*/
-
 :root{
     --bitcoin-orange: #f7931a;
     --soft-orange: #ffe9d5;
@@ -18,12 +10,98 @@
     --just-white: #fff;
 }
 
-*{
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html
+{
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
+}
+
+header
+{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width:320px;
+    height:334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
+}
+
+
+header img
+{
+    width: 150px;
+    height: 20px;
+    align-self: center;
+    margin-top: 60px;
+}
+
+.header--tittle-conainer
+{
+    width: 90%;
+    min-width:283px;
+    max-width: 295px;
+    height: 215px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header--tittle-conainer h1
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+
+    
+}
+
+.header--tittle-conainer p
+{
+    margin-top: 2.5rem;
+    font-size:1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange)
+}
+
+
+.header--tittle-conainer .header--butto
+{
+    background-color: var(--off-white);
+    color: var(--black);
+    position:absolute;
+    left: calc(50% - 115px);
+    top: 265px;  
+    display: block;
+    margin-top:45px;
+    width:225px;
+    height:48px;
+    padding: 15px;
+    box-shadow: 0px 8px 8px rgba(89,73,30, 0.10);
+    border: none;
+    border-radius: 10px;
+    font-size:1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.header--tittle-conainer .header--butto span
+{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icon/DownArrow.png');
 }
